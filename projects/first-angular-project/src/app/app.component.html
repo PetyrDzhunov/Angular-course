@@ -8,4 +8,12 @@
     <hr>
     <app-success-alert></app-success-alert>
     <app-warning-alert></app-warning-alert>
+    <!-- <button (click)="showSecret= !showSecret" class="btn btn-primary">Display details</button> -->
+    <button (click)="onToggleDetails()" class="btn btn-primary">Display details</button>
+    <p *ngIf="showSecret">Secret password = tuna</p>
+    <div 
+    [ngStyle]="{backgroundColor: logItem >= 5 ? 'blue' : 'transparent'}"
+    [ngClass]="{'white-text' :logItem >=5}"
+    *ngFor="let logItem of log"
+    >{{logItem}}</div>
 </div>

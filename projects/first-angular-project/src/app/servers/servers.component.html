@@ -22,5 +22,4 @@ class="form-control"
 >
 <p>{{username}}</p>
 <button (click)="changeUserName($event)" class="btn btn-primary" [disabled]="!username">Click</button>
-<app-server></app-server>
-<app-server></app-server>
+<app-server *ngFor="let server of servers"></app-server>
