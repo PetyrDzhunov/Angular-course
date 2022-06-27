@@ -23,6 +23,7 @@
               "projects/first-angular-project/src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "projects/first-angular-project/src/styles.css"
             ],
             "scripts": []
