@@ -118,6 +118,7 @@
               "projects/shopping-list/src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "projects/shopping-list/src/styles.css"
             ],
             "scripts": []
