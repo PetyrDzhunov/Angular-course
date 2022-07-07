@@ -8,21 +8,20 @@ import { NgForm } from '@angular/forms';
 })
 export class AppComponent {
 
-  @ViewChild('f') signUpForm :NgForm
+  // @ViewChild('f') signUpForm :NgForm
 
   suggestUserName() {
     const suggestedName = 'Superuser';
   }
 
-  // onSubmit(ngForm : NgForm) {
-  //   const {username,email,secret} = ngForm.value;
-  //   console.log(username,email,secret)
-  // }
-
-  onSubmit() {
-    console.log(this.signUpForm);
-    
+  onSubmit(ngForm : NgForm) {
+    const {username,email,secret} = ngForm.value;
+    console.log(username,email,secret)
   }
+
+  // onSubmit() {
+  //   console.log(this.signUpForm );
+  // }
 
 
 }
