@@ -781,6 +781,7 @@
               "projects/forms-reactive/src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "projects/forms-reactive/src/styles.css"
             ],
             "scripts": []
